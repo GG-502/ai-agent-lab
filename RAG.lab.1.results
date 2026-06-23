@@ -24,3 +24,96 @@ Sentence 3: Le chien a aboyé fort.
 Similarity (Sentence 1 vs Sentence 2): 0.6387
 Similarity (Sentence 2 vs Sentence 3): 0.7094
 Similarity (Sentence 3 vs Sentence 1): 0.6920
+
+Generating embeddings for three sentences...
+Sentence 1: The cat sat on the mat.
+Sentence 2: The dog sat on the mat.
+Sentence 3: The cat sat on the hat.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.8256
+Similarity (Sentence 2 vs Sentence 3): 0.5336
+Similarity (Sentence 3 vs Sentence 1): 0.7123
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: I like pizza.
+Sentence 2: I really love eating delicious, hot pizza.
+Sentence 3: Pizza is good.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.7054
+Similarity (Sentence 2 vs Sentence 3): 0.6040
+Similarity (Sentence 3 vs Sentence 1): 0.7605
+
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: The movie was excellent and entertaining.
+Sentence 2: The movie was terrible and boring.
+Sentence 3: I enjoyed watching the film.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.5502
+Similarity (Sentence 2 vs Sentence 3): 0.3948
+Similarity (Sentence 3 vs Sentence 1): 0.6068
+
+🎉 Cosine similarity test complete!
+
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: The precipitation is expected to commence shortly.
+Sentence 2: It's going to rain soon.
+Sentence 3: The weather forecast indicates imminent rainfall.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.5990
+Similarity (Sentence 2 vs Sentence 3): 0.6569
+Similarity (Sentence 3 vs Sentence 1): 0.6651
+
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: I love programming in Python.
+Sentence 2: Chocolate cake is delicious.
+Sentence 3: The ocean is very deep.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.1724
+Similarity (Sentence 2 vs Sentence 3): 0.1280
+Similarity (Sentence 3 vs Sentence 1): 0.0799
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: Ice cream is yummy.
+Sentence 2: Veggies are good for you.
+Sentence 3: drink water every day.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.2988
+Similarity (Sentence 2 vs Sentence 3): 0.2967
+Similarity (Sentence 3 vs Sentence 1): 0.1317
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: The music was excellent and entertaining.
+Sentence 2: The music was terrible and boring.
+Sentence 3: I enjoyed listening to the music.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.5832
+Similarity (Sentence 2 vs Sentence 3): 0.4616
+Similarity (Sentence 3 vs Sentence 1): 0.6507
+
+
+Discussion Questions:
+
+Why do you think sentences in different languages can have high similarity?
+the all have the same meaning
+
+What happens to similarity when you keep the topic the same but change the sentiment (positive vs. negative)?
+The 2 positive sentences scored higher
+
+How might these embeddings be useful in a real application (search engines, recommendation systems, etc.)?
+An embedding-based search engine understands what you're looking for and surfaces pages that match your intent
