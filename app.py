@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_core.tools import Tool
+from pydantic import SecretStr
 from datetime import datetime
 import os
 import re
@@ -61,7 +62,7 @@ def main():
         model="openai/gpt-4o",
         temperature=0,
         base_url="https://models.github.ai/inference",
-        api_key=github_token
+        api_key=SecretStr(github_token)
     )
 
     print("🔗 Connected to GitHub AI Models!")
@@ -225,9 +226,10 @@ def main():
                         # Execute the tool
                         if tool_name in tool_map:
                             tool_func = tool_map[tool_name].func
-                            tool_result = tool_func(**tool_input)
-                            print(f"   ✓ {tool_name} returned: {tool_result}")
-                            tool_results.append(ToolMessage(content=str(tool_result), tool_call_id=tool_call["id"]))
+                            if tool_func is not None:
+                                tool_result = tool_func(**tool_input)
+                                print(f"   ✓ {tool_name} returned: {tool_result}")
+                                tool_results.append(ToolMessage(content=str(tool_result), tool_call_id=tool_call["id"]))
                     
                     # Second LLM call with tool results
                     messages.append(response)
@@ -241,7 +243,8 @@ def main():
                         print(f"\n✅ Result (from tool):\n   {tool_results[0].content if tool_results else 'No result'}")
                         continue
                     
-                    print(f"\n✅ Result:\n   {final_response.content}")
+                    if final_response is not None:
+                        print(f"\n✅ Result:\n   {final_response.content}")
                 else:
                     # No tool calls, just return response
                     print(f"\n✅ Result:\n   {response.content}")
@@ -293,7 +296,8 @@ def main():
                         # Execute the tool
                         if tool_name in tool_map:
                             tool_func = tool_map[tool_name].func
-                            tool_result = tool_func(**tool_input)
+                            if tool_func is not None:
+                                tool_result = tool_func(**tool_input)
                             print(f"   ✓ {tool_name} returned: {tool_result}")
                             tool_results.append(ToolMessage(content=str(tool_result), tool_call_id=tool_call["id"]))
                     
@@ -309,7 +313,8 @@ def main():
                         print(f"\n✅ Result (from tool):\n   {tool_results[0].content if tool_results else 'No result'}")
                         continue
                     
-                    print(f"\n✅ Result:\n   {final_response.content}")
+                    if final_response is not None:
+                        print(f"\n✅ Result:\n   {final_response.content}")
                 else:
                     # No tool calls, just return response
                     print(f"\n✅ Result:\n   {response.content}")
