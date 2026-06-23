@@ -1,0 +1,14 @@
+🤖 AI Agent Starting...
+✅ GitHub token found!
+🔗 Connected to GitHub AI Models!
+
+=== Embedding Inspector Lab ===
+Generating embeddings for three sentences...
+Sentence 1: The canine barked loudly.
+Sentence 2: The dog made a noise.
+Sentence 3: The electron spins rapidly.
+
+=== Cosine Similarity Analysis ===
+Similarity (Sentence 1 vs Sentence 2): 0.6976
+Similarity (Sentence 2 vs Sentence 3): 0.1155
+Similarity (Sentence 3 vs Sentence 1): 0.2293
