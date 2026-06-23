@@ -1,0 +1,96 @@
+=== Embedding Inspector Lab ===
+Adding sentences to vector store...
+✅ Stored 3 sentences in vector store
+  Sentence 1: The music was excellent and entertaining.
+  Sentence 2: The music was terrible and boring.
+  Sentence 3: I enjoyed listening to the music.
+
+🎉 Vector store population complete!
+
+sentences = [
+    "Golden retrievers are known for their friendly temperament and make excellent therapy dogs.",
+    "Quantum entanglement allows two particles to remain correlated regardless of the distance separating them.",
+    "Caramelizing onions slowly over low heat brings out their natural sugars and deepens their flavor.",
+    "The serve in tennis is often considered the most dominant shot in a player's arsenal.",
+    "A tornado forms when warm, moist air collides with cold, dry air and begins to rotate rapidly.",
+    "Python's list comprehensions offer a concise way to filter and transform data in a single line.",
+    "Cats have a specialized collarbone that allows them to always land on their feet when falling.",
+    "Dark matter makes up roughly 27% of the universe, yet it cannot be directly observed.",
+    "Blanching vegetables before freezing them helps preserve their color, texture, and nutritional value.",
+    "Rock climbing builds exceptional grip strength, core stability, and mental focus simultaneously.",
+    "The aurora borealis occurs when charged solar particles collide with gases in Earth's atmosphere.",
+    "A hash map provides average O(1) time complexity for lookups by mapping keys to memory addresses.",
+    "Dolphins communicate through a complex system of clicks, whistles, and body language.",
+    "Fermentation is the biochemical process behind sourdough bread, yogurt, kimchi, and beer.",
+    "Humidity makes high temperatures feel significantly hotter because sweat cannot evaporate efficiently from the skin."
+]
+
+🤖 AI Agent Starting...
+✅ GitHub token found!
+🔗 Connected to GitHub AI Models!
+
+=== Embedding Inspector Lab ===
+Adding sentences to vector store...
+✅ Stored 15 sentences in vector store
+  Sentence 1: Golden retrievers are known for their friendly temperament and make excellent therapy dogs.
+  Sentence 2: Quantum entanglement allows two particles to remain correlated regardless of the distance separating them.
+  Sentence 3: Caramelizing onions slowly over low heat brings out their natural sugars and deepens their flavor.
+  Sentence 4: The serve in tennis is often considered the most dominant shot in a player's arsenal.
+  Sentence 5: A tornado forms when warm, moist air collides with cold, dry air and begins to rotate rapidly.
+  Sentence 6: Python's list comprehensions offer a concise way to filter and transform data in a single line.
+  Sentence 7: Cats have a specialized collarbone that allows them to always land on their feet when falling.
+  Sentence 8: Dark matter makes up roughly 27% of the universe, yet it cannot be directly observed.
+  Sentence 9: Blanching vegetables before freezing them helps preserve their color, texture, and nutritional value.
+  Sentence 10: Rock climbing builds exceptional grip strength, core stability, and mental focus simultaneously.
+  Sentence 11: The aurora borealis occurs when charged solar particles collide with gases in Earth's atmosphere.
+  Sentence 12: A hash map provides average O(1) time complexity for lookups by mapping keys to memory addresses.
+  Sentence 13: Dolphins communicate through a complex system of clicks, whistles, and body language.
+  Sentence 14: Fermentation is the biochemical process behind sourdough bread, yogurt, kimchi, and beer.
+  Sentence 15: Humidity makes high temperatures feel significantly hotter because sweat cannot evaporate efficiently from the skin.
+
+🎉 Vector store population complete!
+
+=== Semantic Search ===
+Enter a search query (or 'quit' to exit): dog info
+
+🔍 Search Results for: 'dog info'
+Found 3 similar sentences:
+
+  1. Similarity: 0.3374
+     Golden retrievers are known for their friendly temperament and make excellent therapy dogs.
+  2. Similarity: 0.2042
+     Dolphins communicate through a complex system of clicks, whistles, and body language.
+  3. Similarity: 0.1796
+     Cats have a specialized collarbone that allows them to always land on their feet when falling.
+
+Enter a search query (or 'quit' to exit): space
+
+🔍 Search Results for: 'space'
+Found 3 similar sentences:
+
+  1. Similarity: 0.1926
+     Quantum entanglement allows two particles to remain correlated regardless of the distance separating them.
+  2. Similarity: 0.1460
+     Dark matter makes up roughly 27% of the universe, yet it cannot be directly observed.
+  3. Similarity: 0.1396
+     A hash map provides average O(1) time complexity for lookups by mapping keys to memory addresses.
+
+Enter a search query (or 'quit' to exit): exit
+
+👋 Thank you for using Semantic Search!
+
+
+**1. Keyword vs. Semantic Search**
+Keyword search looks for exact word matches. Vector search understands *meaning*, so "canine nutrition" still finds "dog food" even with zero shared words.
+
+**2. Similarity Scores**
+It's measuring how close two embeddings are in vector space. Specific, on-topic queries score high. Vague or broad queries spread the score thin across everything.
+
+**3. False Positives**
+The model guesses meaning — and sometimes guesses wrong. Ambiguous queries, short sentences, and overlapping vocabulary between topics all trip it up.
+
+**4. Scaling to 1M Sentences**
+RAM explodes fast (think ~6GB just for vectors), and comparing your query against a million vectors one by one is too slow. Real systems use approximate search algorithms (like HNSW) and move off in-memory storage to actual vector databases.
+
+**5. Real-World Uses**
+It's already everywhere — Google understanding your messy queries, Netflix/Spotify recommendations, support bots finding the right FAQ, Copilot pulling relevant code, and e-commerce letting you search by description instead of exact product name.
