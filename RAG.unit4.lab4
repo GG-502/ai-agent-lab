@@ -1,1 +1,308 @@
+🤖 AI Agent Starting...
+✅ GitHub token found!
+🔗 Connected to GitHub AI Models!
+
+=== Loading Documents into Vector Database ===
+✅ Document loaded: HealthInsuranceBrochure.md (4631 characters)
+📄 Successfully loaded: HealthInsuranceBrochure.md
+
+📊 Text Chunking Statistics:
+   Total characters: 42103
+   Number of chunks created: 43
+   Average chunk size: 979.14 characters
+✅ Stored chunk 1/43 from EmployeeHandbook.md
+✅ Stored chunk 2/43 from EmployeeHandbook.md
+✅ Stored chunk 3/43 from EmployeeHandbook.md
+✅ Stored chunk 4/43 from EmployeeHandbook.md
+✅ Stored chunk 5/43 from EmployeeHandbook.md
+✅ Stored chunk 6/43 from EmployeeHandbook.md
+✅ Stored chunk 7/43 from EmployeeHandbook.md
+✅ Stored chunk 8/43 from EmployeeHandbook.md
+✅ Stored chunk 9/43 from EmployeeHandbook.md
+✅ Stored chunk 10/43 from EmployeeHandbook.md
+✅ Stored chunk 11/43 from EmployeeHandbook.md
+✅ Stored chunk 12/43 from EmployeeHandbook.md
+✅ Stored chunk 13/43 from EmployeeHandbook.md
+✅ Stored chunk 14/43 from EmployeeHandbook.md
+
+
+🤖 AI Agent Starting...
+✅ GitHub token found!
+🔗 Connected to GitHub AI Models!
+
+=== Loading Documents into Vector Database ===
+✅ Document loaded: HealthInsuranceBrochure.md (4631 characters)
+📄 Successfully loaded: HealthInsuranceBrochure.md
+
+📊 Markdown Header-Aware Chunking Statistics:
+   Total characters: 42103
+   Number of chunks created: 14
+   Average chunk size: 3007.36 characters
+   Smallest chunk: 658 characters
+   Largest chunk: 4997 characters
+   Chunk overlap: 200 characters (for context preservation)
+   Sample chunk metadata: {'Header 1': 'Employee Handbook', 'Header 2': '1. Welcome and Introduction'}
+✅ Stored chunk 1/14 from EmployeeHandbook.md
+✅ Stored chunk 2/14 from EmployeeHandbook.md
+✅ Stored chunk 3/14 from EmployeeHandbook.md
+✅ Stored chunk 4/14 from EmployeeHandbook.md
+✅ Stored chunk 5/14 from EmployeeHandbook.md
+✅ Stored chunk 6/14 from EmployeeHandbook.md
+✅ Stored chunk 7/14 from EmployeeHandbook.md
+✅ Stored chunk 8/14 from EmployeeHandbook.md
+✅ Stored chunk 9/14 from EmployeeHandbook.md
+✅ Stored chunk 10/14 from EmployeeHandbook.md
+✅ Stored chunk 11/14 from EmployeeHandbook.md
+✅ Stored chunk 12/14 from EmployeeHandbook.md
+✅ Stored chunk 13/14 from EmployeeHandbook.md
+✅ Stored chunk 14/14 from EmployeeHandbook.md
+
+📊 Successfully stored 14 chunks from EmployeeHandbook.md
+
+=== Creating ReAct Agent ===
+✅ Agent created successfully!
+
+=== Agent Ready ===
+The agent can now answer questions about company documents.
+
+============================================================
+🤖 Company Document Assistant
+============================================================
+Welcome! I can answer questions about company policies,
+benefits, and procedures by searching our document repository.
+
+Type 'quit' or 'exit' to end the conversation.
+============================================================
+
+You: what health insurance coverage is available?
+
+🔧 Calling tool: search_documents
+
+Agent: TechCorp Solutions offers a variety of health insurance options to support employees and their families. Here are the details:
+
+### Medical Insurance Plans
+1. **PPO High Plan - Maximum Coverage**
+   - Low $500/$1,000 deductible
+   - $20 for primary care visits
+   - TechCorp pays **85%** of premiums
+   - Employee cost: **$95/month** (individual)
+
+2. **PPO Standard Plan - Balanced Value**
+   - $1,500/$3,000 deductible
+   - Nationwide network access
+   - TechCorp pays **80%** of premiums
+   - Employee cost: **$75/month** (individual)
+
+3. **High Deductible Health Plan (HDHP) - Tax Savings**
+   - TechCorp pays **90%** of premiums
+   - Lowest cost: **$50/month** (individual)
+   - Includes a Health Savings Account (HSA) with **$1,000-$2,000 employer contribution annually**
+
+### Dental Insurance
+1. **Dental PPO**
+   - 100% coverage for preventive care (cleanings, exams)
+   - $2,000 annual maximum
+   - Orthodontia coverage available
+
+2. **Dental HMO**
+   - **100% FREE** - No employee cost
+   - Fixed low copays ($5 for cleanings)
+   - No deductibles or annual maximum
+
+### Vision Insurance
+- **100% paid by TechCorp - No cost to you!**
+- $10 eye exam
+- $130 toward frames annually
+- Contact lens option
+- 15% discount on laser vision correction
+
+### Additional Benefits
+- **Health Savings Account (HSA):** Available with HDHP, includes employer contributions and tax advantages.
+- **Flexible Spending Accounts (FSA):** Available with PPO plans for healthcare and dependent care expenses.
+- **Employee Assistance Program (EAP):** Includes 6 free counseling sessions per year, financial/legal consultations, and work-life services.
+- **Wellness Perks:** Free annual health screenings, telemedicine, flu shots, gym membership discounts, and smoking cessation support.
+
+### Eligibility and Enrollment
+- **Full-time employees:** Coverage starts the first of the month after 30 days.
+- **Part-time employees (30+ hours):** Coverage starts the first of the month after 60 days.
+- **Dependents:** Coverage available for spouse, domestic partner, and children up to age 26.
+- Enrollment is available for new hires within 30 days, during annual open enrollment in November, or after qualifying life events.
+
+For more details, you can contact the HR Benefits Team at **benefits@techcorpsolutions.com** or call Ext. 5000.
+
+*Cited from: TechCorp Solutions Health & Wellness Benefits*
+
+You: how do i enroll?
+
+🔧 Calling tool: search_documents
+
+Agent: To enroll in health insurance at TechCorp Solutions, follow these steps:
+
+1. **Eligibility**:
+   - Full-time employees: Coverage starts the first of the month after 30 days of employment.
+   - Part-time employees (working 30+ hours per week): Coverage starts the first of the month after 60 days of employment.
+
+2. **Enrollment Periods**:
+   - New hires: You must enroll within 30 days of your hire date.
+   - Annual Open Enrollment: Takes place every November.
+   - Qualifying Life Events: You can make changes within 30 days of events like marriage, birth, or adoption.
+
+3. **How to Enroll**:
+   - Contact the HR Benefits Team at **benefits@techcorpsolutions.com** or call Ext. 5000 for assistance.
+   - You will receive instructions and access to the enrollment portal where you can select your desired health insurance plan.
+
+4. **Required Information**:
+   - Have personal details ready for yourself and any dependents you wish to enroll (e.g., Social Security Numbers, birth dates, etc.).
+
+5. **Confirmation**:
+   - After completing your enrollment, you will receive a confirmation of your selected benefits.
+
+If you need further assistance, feel free to reach out to the HR Benefits Team.
+
+*Cited from: TechCorp Solutions Health & Wellness Benefits*
+
+You: is there dental coverage?
+
+🔧 Calling tool: search_documents
+
+Agent: Yes, TechCorp Solutions offers two dental insurance options:
+
+### 1. **Dental PPO**
+   - **Coverage**: 100% coverage for preventive care (e.g., cleanings, exams).
+   - **Annual Maximum**: $2,000.
+   - **Orthodontia Coverage**: Available.
+
+### 2. **Dental HMO**
+   - **Cost**: 100% free for employees (no monthly premium).
+   - **Copays**: Fixed low copays (e.g., $5 for cleanings).
+   - **Deductibles/Annual Maximum**: None.
+
+Both options are designed to provide comprehensive dental care for employees and their families. For more details or to enroll, you can contact the HR Benefits Team at **benefits@techcorpsolutions.com** or call Ext. 5000.
+
+*Cited from: TechCorp Solutions Health & Wellness Benefits*
+
+
+
+Key Takeaways
+
+By completing Lab 4, you've learned:
+
+✅ Chunking is Essential - Large documents must be split to work with embedding models
+
+✅ Multiple Strategies Exist - Fixed-size, paragraph-based, and structure-aware chunking each have their place
+
+✅ Trade-offs Matter - Chunk size, overlap, and boundary detection all affect search quality
+
+✅ Context Preservation - Good chunking strategies preserve semantic meaning and document structure
+
+✅ Testing is Critical - Always test chunking strategies with real queries to ensure quality
+
+You now understand one of the core engineering challenges in RAG systems. In production applications, chunking strategy can make or break the user experience!
+
+
+
+Discussion:
+Chunk Size Trade-offs: What happens if chunks are too small (100 characters)? Too large (5000 characters)? What's the "sweet spot"?
+
+Context Boundaries: Did you notice any queries where the answer was split awkwardly across chunks? How could overlap help?
+
+Strategy Selection: When would you choose fixed-size vs. markdown-aware chunking? What about for different document types (code, legal documents, chat logs)?
+
+Metadata Loss: What information about document structure is lost when chunking? How could you preserve it?
+
+Search Quality: Did chunking improve or worsen search results compared to searching full documents? Why?
+
+
+# Chunking Strategy Trade-offs in RAG Systems
+
+## Chunk Size Trade-offs
+
+**Too small (≈100 characters)** strips away the surrounding context that gives a sentence meaning. A chunk like *"The rate was 5.2%"* is nearly useless without knowing what rate, from what document, compared to what. You'll get high recall (the right chunk surfaces) but terrible precision — the LLM can't generate a coherent answer from a fragment. You also explode your chunk count, which increases retrieval latency and cost.
+
+**Too large (≈5000 characters)** is the opposite failure. The embedding model has to compress too much meaning into one vector, so the centroid ends up representing *nothing in particular* very well. A 5000-character chunk about a contract that covers payment terms, termination clauses, and governing law will rank mediocrely for queries about any of them — it's too diluted. You also burn context window space on irrelevant content dragged along for the ride.
+
+**The practical sweet spot is 512–1500 characters (roughly 100–300 tokens)**, with the exact target driven by your embedding model's context window and your document type. Most embedding models were trained with passages in that range, so the vector space is calibrated for it.
+
+---
+
+## Context Boundaries & Overlap
+
+Awkward splits are inevitable with fixed-size chunking. Classic examples:
+
+- A numbered list where items 1–3 are in chunk N and items 4–7 are in chunk N+1
+- A legal clause that starts at the end of one chunk ("the party shall be liable for…") and completes in the next
+- A code function split mid-body
+
+**Overlap is the standard mitigation.** A 10–20% overlap (e.g., 100-character overlap on 512-character chunks) means the tail of chunk N is repeated at the head of chunk N+1. This ensures boundary-spanning answers appear in at least one complete chunk. The cost is storage and slight embedding redundancy — usually worth it.
+
+A better fix for structured content is **semantic chunking**: split on sentence or paragraph boundaries rather than character counts, so you never cut mid-thought.
+
+---
+
+## Strategy Selection by Document Type
+
+| Document Type | Best Strategy | Why |
+|---|---|---|
+| **Markdown docs / wikis** | Markdown-aware (split on `##` headers) | Headings are semantic boundaries; each section is a coherent unit |
+| **Legal documents** | Section/clause-aware + metadata tagging | Clauses have formal boundaries; cross-references need to be preserved |
+| **Source code** | AST-based (split on function/class boundaries) | Fixed-size destroys syntax; a function is the natural retrieval unit |
+| **Chat logs** | Turn-based or sliding window by timestamp | Conversational context requires adjacent turns; fixed-size misaligns badly |
+| **Scientific papers** | Section-aware (Abstract / Methods / Results) | Readers query specific sections; mixing them hurts precision |
+| **Dense prose (books)** | Sentence-boundary fixed-size with overlap | No strong structural markers; overlap compensates |
+
+The core principle: **split where a human would split** — at the boundaries a reader would recognize as topic changes.
+
+---
+
+## Metadata Loss
+
+Fixed-size chunking by default throws away almost everything except the text:
+
+- **Document identity** — which file did this come from?
+- **Position** — is this the introduction or a footnote?
+- **Hierarchy** — what section/subsection does this belong to?
+- **Relationships** — does this chunk reference another section or external document?
+- **Recency** — when was this written or last updated?
+
+**How to preserve it:** Store metadata in your vector DB alongside each chunk's embedding. A well-designed chunk record looks like:
+
+```json
+{
+  "chunk_id": "doc_42_chunk_7",
+  "text": "...",
+  "embedding": [...],
+  "metadata": {
+    "source": "employee_handbook_v3.pdf",
+    "section": "Section 4: Benefits",
+    "page": 12,
+    "chunk_index": 7,
+    "total_chunks": 23,
+    "last_modified": "2024-11-01",
+    "doc_type": "policy"
+  }
+}
+```
+
+You can then **filter before retrieval** (only search chunks from policy docs updated after 2024) and **inject metadata into your prompt** so the LLM can reason about source and position.
+
+---
+
+## Does Chunking Help or Hurt Search Quality?
+
+**Compared to full-document search, chunking almost always wins** — but it depends on the query type:
+
+| Query Type | Chunking Effect | Reason |
+|---|---|---|
+| Specific factual lookup | ✅ Major improvement | Isolates the relevant passage; avoids dilution |
+| "Give me an overview of X" | ⚠️ Neutral / slight regression | Requires synthesizing multiple chunks; a full-doc summary might serve better |
+| Cross-document comparison | ✅ Improvement | Surfaces comparable passages from different docs |
+| Questions spanning multiple sections | ❌ Can regress | Answer is split; requires chunk re-ranking and fusion to reconstruct |
+
+The worst-case scenario for chunking is a query whose answer requires understanding the *relationship* between two sections — e.g., "How does the termination clause interact with the payment schedule?" If those clauses are in separate chunks that don't rank highly together, the retriever fails even though the answer is in the document.
+
+**Mitigations:** parent-document retrieval (retrieve the chunk, return the parent section), re-ranking with cross-encoders, and query decomposition (break multi-part questions into sub-queries, retrieve separately, then merge).
+
+---
+
+**The meta-lesson:** chunking is not a solved problem with one right answer. It's a design decision that encodes assumptions about how your documents are structured and how your users will query them. Getting it right means understanding both.
 
